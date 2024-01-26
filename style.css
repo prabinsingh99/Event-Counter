@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: rgb(232, 144, 29);
+}
+
+.mainscr{
+    height: 800px;
+    width: 100%;
+    background-image: url(Images/pranit-kadam-shree-ram-artwork-cmplt.jpg);
+    position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    color: white;
+}
+
+.event_time{
+    display: flex;
+    gap: 40px;
+}
+
+.evbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.evbox input{
+    padding: 0px,20px,0,20px;
+    margin: 0px,20px,0,20px ;
+    height: 80px;
+    width: 130px;
+    background-color: rgb(199, 199, 199);
+    border-radius: 10px;
+    color: white !important;
+    border: none !important;
+    outline: none !important;
+    text-align: center !important;
+    font-size: 50px;
+    overflow: hidden !important;
+}
+
+.evbox span{
+    font-weight: bolder;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width:600px){
+    .mainscr{
+        width: 100%;
+        background-image: url(https://w0.peakpx.com/wallpaper/935/523/HD-wallpaper-shri-ram-janm-bhumi-god-lord-ramayan-ramchandra-shree-ram-shree-rama-shri-ram-shri-ram-mandir.jpg);
+    }
+
+    .overlay{
+        font-size: 10px;
+        justify-content: center;
+        gap: 70px;
+    }
+
+    .event_time{
+        gap: 20px;
+    }
+
+    .evbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .evbox input{
+        height: 40px;
+        width: 60px;
+        font-size: 20px;
+        overflow: hidden !important;
+    }
+    
+    .evbox span{
+        font-size: 10px;
+    }
+}
